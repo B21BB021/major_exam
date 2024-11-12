@@ -184,7 +184,7 @@ class IrisModelOptimizer:
 # optimizer.quantize_model()
 # optimizer.run_tests()
 
-
+mlflow.set_tracking_uri("file:/tmp/mlruns")
 def main():
     # Initialize processor
     processor = IrisDataProcessor()
